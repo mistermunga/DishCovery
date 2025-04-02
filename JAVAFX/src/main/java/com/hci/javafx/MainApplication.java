@@ -1,5 +1,6 @@
 package com.hci.javafx;
 
+import com.hci.javafx.ui.MainPage;
 import com.hci.javafx.ui.SplashScreen;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -20,6 +21,10 @@ public class MainApplication extends Application {
     }
 
     public void showMainPage(){
+        MainPage mp = new MainPage();
+        Scene scene = new Scene(mp);
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
 
