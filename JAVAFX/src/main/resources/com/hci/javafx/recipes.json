@@ -4,7 +4,7 @@
         "name": "Simple Omelette",
         "vegetarian": true,
         "calories": 200,
-        "prep_time": "10 minutes",
+        "prep_time": "10",
         "difficulty": "easy",
         "ingredients": [
           "eggs",
@@ -24,7 +24,7 @@
         "name": "Pasta Primavera",
         "vegetarian": true,
         "calories": 400,
-        "prep_time": "25 minutes",
+        "prep_time": "25",
         "difficulty": "easy",
         "ingredients": [
           "Pasta of choice",
@@ -49,7 +49,7 @@
         "name": "Grilled Chicken Salad",
         "vegetarian": false,
         "calories": 350,
-        "prep_time": "20 minutes",
+        "prep_time": "20",
         "difficulty": "easy",
         "ingredients": [
           "Chicken breasts",
@@ -74,7 +74,7 @@
         "name": "Beef Wellington",
         "vegetarian": false,
         "calories": 600,
-        "prep_time": "90 minutes",
+        "prep_time": "90",
         "difficulty": "hard",
         "ingredients": [
           "Beef tenderloin",
@@ -97,7 +97,7 @@
         "name": "Chocolate Cake",
         "vegetarian": true,
         "calories": 450,
-        "prep_time": "60 minutes",
+        "prep_time": "60",
         "difficulty": "medium",
         "ingredients": [
           "Flour",
@@ -120,7 +120,7 @@
         "name": "Vegetable Stir Fry",
         "vegetarian": true,
         "calories": 300,
-        "prep_time": "15 minutes",
+        "prep_time": "15",
         "difficulty": "easy",
         "ingredients": [
           "Mixed vegetables (broccoli, carrots, bell peppers, snap peas)",
@@ -144,7 +144,7 @@
         "name": "Avocado Toast",
         "vegetarian": true,
         "calories": 250,
-        "prep_time": "5 minutes",
+        "prep_time": "5",
         "difficulty": "easy",
         "ingredients": [
           "Whole grain bread",
@@ -166,7 +166,7 @@
         "name": "Beef Stroganoff",
         "vegetarian": false,
         "calories": 550,
-        "prep_time": "40 minutes",
+        "prep_time": "40",
         "difficulty": "medium",
         "ingredients": [
           "Beef sirloin strips",
@@ -194,7 +194,7 @@
         "name": "Lemon Garlic Shrimp Pasta",
         "vegetarian": false,
         "calories": 450,
-        "prep_time": "25 minutes",
+        "prep_time": "25",
         "difficulty": "medium",
         "ingredients": [
           "Shrimp (peeled and deveined)",
@@ -223,7 +223,7 @@
         "name": "Microwave Mac and Cheese",
         "vegetarian": true,
         "calories": 400,
-        "prep_time": "10 minutes",
+        "prep_time": "10",
         "difficulty": "easy",
         "ingredients": [
           "small pasta",
@@ -246,7 +246,7 @@
         "name": "Ramen Noodle Upgrade",
         "vegetarian": true,
         "calories": 350,
-        "prep_time": "8 minutes",
+        "prep_time": "8",
         "difficulty": "easy",
         "ingredients": [
           "Instant ramen package",
@@ -269,7 +269,7 @@
         "name": "Peanut Butter Banana Toast",
         "vegetarian": true,
         "calories": 300,
-        "prep_time": "5 minutes",
+        "prep_time": "5",
         "difficulty": "easy",
         "ingredients": [
           "Bread",
