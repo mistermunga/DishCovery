@@ -1,0 +1,15 @@
+.light-mode-gradient-background{
+    -fx-background-color: linear-gradient(to bottom, #f8dede 50%, #cb003d 100%);
+}
+
+.light-mode-major-button{
+    -fx-font-family: Calibri;
+    -fx-font-size: 18px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #FF914D;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 15 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
