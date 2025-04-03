@@ -13,7 +13,7 @@ public class RecipeService {
 
     @Getter
     private List<Recipe> recipes;
-    private static final String RECIPE_JSON_PATH = "com/hci/javafx/recipes.json";
+    private static final String RECIPE_JSON_PATH = "/com/hci/javafx/recipes.json";
 
     public RecipeService() {
         loadRecipes();

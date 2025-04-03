@@ -1,5 +1,4 @@
-{
-    "recipes": [
+[
       {
         "name": "Simple Omelette",
         "vegetarian": true,
@@ -18,7 +17,7 @@
           "Pour the eggs into the pan and let them set for a minute.",
           "Fold the omelette in half once the bottom is cooked and serve immediately."
         ],
-        "image": "/images/simple_omelette.jpg"
+        "image_path": "/image/recipes/simple_omelette.jpg"
       },
       {
         "name": "Pasta Primavera",
@@ -43,7 +42,7 @@
           "Toss the cooked pasta with the sautéed vegetables and a splash of lemon juice.",
           "Season with salt, pepper, and fresh basil before serving."
         ],
-        "image": "/images/pasta_primavera.jpg"
+        "image_path": "/image/recipes/pasta_primavera.jpg"
       },
       {
         "name": "Grilled Chicken Salad",
@@ -68,7 +67,7 @@
           "Toss mixed greens, cherry tomatoes, cucumber, and red onions in a bowl.",
           "Top the salad with the grilled chicken and drizzle with your favorite dressing."
         ],
-        "image": "/images/grilled_chicken_salad.jpg"
+        "image_path": "/image/recipes/grilled_chicken_salad.jpg"
       },
       {
         "name": "Beef Wellington",
@@ -91,7 +90,7 @@
           "Bake in a preheated oven until the pastry is golden and the beef is cooked to your liking.",
           "Let rest briefly before slicing and serving."
         ],
-        "image": "/images/beef_wellington.jpg"
+        "image_path": "/image/recipes/beef_wellington.jpg"
       },
       {
         "name": "Chocolate Cake",
@@ -114,7 +113,7 @@
           "Pour the batter into the pan and bake until a toothpick inserted in the center comes out clean.",
           "Allow the cake to cool and optionally frost with chocolate ganache before serving."
         ],
-        "image": "/images/chocolate_cake.jpg"
+        "image_path": "/image/recipes/chocolate_cake.jpg"
       },
       {
         "name": "Vegetable Stir Fry",
@@ -138,7 +137,7 @@
           "Stir-fry for 5-7 minutes until vegetables are crisp-tender.",
           "Add soy sauce and a dash of sesame oil, toss to combine and serve hot."
         ],
-        "image": "/images/vegetable_stir_fry.jpg"
+        "image_path": "/image/recipes/vegetable_stir_fry.jpg"
       },
       {
         "name": "Avocado Toast",
@@ -160,7 +159,7 @@
           "Sprinkle with salt, red pepper flakes, and a squeeze of lemon juice.",
           "For extra protein, top with a poached egg (optional)."
         ],
-        "image": "/images/avocado_toast.jpg"
+        "image_path": "/image/recipes/avocado_toast.jpg"
       },
       {
         "name": "Beef Stroganoff",
@@ -188,7 +187,7 @@
           "Simmer until the sauce thickens, then stir in sour cream.",
           "Serve over cooked egg noodles with a sprinkle of fresh parsley."
         ],
-        "image": "/images/beef_stroganoff.jpg"
+        "image_path": "/image/recipes/beef_stroganoff.jpg"
       },
       {
         "name": "Lemon Garlic Shrimp Pasta",
@@ -217,7 +216,7 @@
           "Toss the cooked pasta with the shrimp mixture, adding some pasta water if needed.",
           "Garnish with chopped parsley and grated Parmesan before serving."
         ],
-        "image": "/images/lemon_garlic_shrimp_pasta.jpg"
+        "image_path": "/image/recipes/lemon_garlic_shrimp_pasta.jpg"
       },
       {
         "name": "Microwave Mac and Cheese",
@@ -240,7 +239,7 @@
           "Stir in 1/4 cup milk, 1 cup shredded cheese, and a small pat of butter if using.",
           "Microwave for another 30 seconds, stir until smooth, and enjoy!"
         ],
-        "image": "/images/microwave_mac_cheese.jpg"
+        "image_path": "/image/recipes/microwave_mac_cheese.jpg"
       },
       {
         "name": "Ramen Noodle Upgrade",
@@ -263,7 +262,7 @@
           "Add the seasoning packet, chopped green onions, and a dash of hot sauce if desired.",
           "Remove from heat and enjoy from the pot or transfer to a bowl."
         ],
-        "image": "/images/ramen_upgrade.jpg"
+        "image_path": "/image/recipes/ramen_upgrade.jpg"
       },
       {
         "name": "Peanut Butter Banana Toast",
@@ -285,7 +284,6 @@
           "Drizzle with honey and sprinkle with cinnamon if desired.",
           "For a quick breakfast or snack, you can fold it in half like a sandwich for eating on the go."
         ],
-        "image": "/images/pb_banana_toast.jpg"
+        "image_path": "/image/recipes/pb_banana_toast.jpg"
       }
-    ]
-  }
+]
