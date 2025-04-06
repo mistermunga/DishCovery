@@ -2,6 +2,7 @@ package com.hci.javafx.ui;
 
 import com.hci.javafx.recipe.Recipe;
 import com.hci.javafx.recipe.RecipeService;
+import com.hci.javafx.theme.ThemeManager;
 import com.hci.javafx.ui.component.*;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -24,10 +25,8 @@ public class MainPage extends VBox {
     private RecipeService recipeService;
 
     public MainPage() {
-        this.getStylesheets()
-                .add(Objects.requireNonNull(getClass()
-                        .getResource("/com/hci/javafx/styles.css")).toExternalForm());
-        this.getStyleClass().add("light-mode-gradient-background");
+        ThemeManager.getInstance().registerComponent(this);
+        this.getStyleClass().add("gradient-background");
         this.setPadding(new Insets(0, 0, 20, 0));
         this.setSpacing(10);
 
@@ -84,7 +83,7 @@ public class MainPage extends VBox {
         buttonContainer.setPadding(new Insets(10, 0, 10, 0));
 
         Button findRecipesButton = new Button("Find Recipes!");
-        findRecipesButton.getStyleClass().add("light-mode-rainbow-button");
+        findRecipesButton.getStyleClass().add("rainbow-button");
         findRecipesButton.setOnAction(event -> performSearch());
 
         buttonContainer.getChildren().add(findRecipesButton);
