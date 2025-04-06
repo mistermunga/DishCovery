@@ -10,7 +10,6 @@ import javafx.scene.layout.HBox;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Objects;
 
 public class Footer extends HBox {
 
@@ -28,7 +27,7 @@ public class Footer extends HBox {
 
         Hyperlink policy = new Hyperlink("Privacy Policy");
         policy.getStyleClass().add("footer-link");
-        policy.setOnAction(event -> {System.out.println("Coming soon...");});
+        policy.setOnAction(event -> System.out.println("Coming soon..."));
 
         this.getChildren().addAll(aboutUs, feedback, policy);
 

@@ -13,6 +13,7 @@ import javafx.scene.layout.Region;
 import java.util.Objects;
 
 public class HeaderCard extends HBox {
+    private Button toggleButton;
 
     public HeaderCard() {
         ThemeManager.getInstance().registerComponent(this);
@@ -21,6 +22,7 @@ public class HeaderCard extends HBox {
         this.setPadding(new Insets(10, 15, 10, 15));
 
         createLogo();
+        createThemeToggle();
         createMenuButton();
     }
 
@@ -44,6 +46,25 @@ public class HeaderCard extends HBox {
         } catch (Exception e) {
             System.err.println("Could not load logo: " + e.getMessage());
         }
+    }
+
+    private void createThemeToggle() {
+        // Add theme toggle button
+        toggleButton = new Button();
+        toggleButton.getStyleClass().add("toggle-button");
+        updateToggleButtonText(ThemeManager.getInstance().isBrightMode());
+
+        // Create a binding to update button text when the theme changes
+        ThemeManager.getInstance().brightModeProperty().addListener(
+                (observable, oldValue, newValue) -> updateToggleButtonText(newValue));
+
+        toggleButton.setOnAction(event -> ThemeManager.getInstance().toggleTheme());
+
+        this.getChildren().add(toggleButton);
+    }
+
+    private void updateToggleButtonText(boolean isBrightMode) {
+        toggleButton.setText(isBrightMode ? "Dark Mode" : "Light Mode");
     }
 
     private void createMenuButton() {

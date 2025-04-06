@@ -8,8 +8,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Polygon;
 
-import java.util.Objects;
-
 public class FilterComponent extends VBox {
 
     public FilterComponent() {

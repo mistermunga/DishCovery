@@ -7,9 +7,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.FontWeight;
-
-import java.util.Objects;
 
 public class CookTimeSelector extends VBox {
 

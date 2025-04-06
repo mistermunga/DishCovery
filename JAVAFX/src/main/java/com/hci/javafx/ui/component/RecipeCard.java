@@ -11,9 +11,11 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
+import lombok.Getter;
 
 import java.util.Objects;
 
+@Getter
 public class RecipeCard extends StackPane {
 
     private Recipe recipe;
@@ -126,7 +128,4 @@ public class RecipeCard extends StackPane {
         this.getChildren().add(nonVisualBox);
     }
 
-    public Recipe getRecipe() {
-        return recipe;
-    }
 }

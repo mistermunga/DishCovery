@@ -7,7 +7,6 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 
 import java.util.List;
-import java.util.Objects;
 
 public class RecipeGrid extends VBox {
 
