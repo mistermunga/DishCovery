@@ -1,7 +1,7 @@
 package com.hci.javafx.ui;
 
 import com.hci.javafx.MainApplication;
-import com.hci.javafx.session.AppSession;
+import com.hci.javafx.theme.ThemeManager;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
@@ -12,13 +12,11 @@ import javafx.geometry.Insets;
 import java.util.Objects;
 
 public class SplashScreen extends VBox {
-    private static final String LIGHT_STYLE = "/com/hci/javafx/styles.css";
-    private static final String DARK_STYLE = "/com/hci/javafx/dark-styles.css";
     private Button toggleButton;
 
     public SplashScreen() {
-        // Apply the initial stylesheet based on the current mode
-        applyTheme(AppSession.getInstance().isBrightMode());
+        // Register this component with the ThemeManager
+        ThemeManager.getInstance().registerComponent(this);
 
         this.setPrefWidth(400);
         this.setPrefHeight(500);
@@ -53,29 +51,21 @@ public class SplashScreen extends VBox {
         startButton.setOnAction(event -> MainApplication.getInstance().showMainPage());
         this.getChildren().add(startButton);
 
-        // Add theme toggle button with initial state based on current mode
+        // Add theme toggle button
         toggleButton = new Button();
         toggleButton.getStyleClass().add("toggle-button");
-        updateToggleButtonText(AppSession.getInstance().isBrightMode());
+        updateToggleButtonText(ThemeManager.getInstance().isBrightMode());
 
-        toggleButton.setOnAction(event -> {
-            boolean newBrightMode = !AppSession.getInstance().isBrightMode();
-            AppSession.getInstance().setBrightMode(newBrightMode);
-            updateToggleButtonText(newBrightMode);
-            applyTheme(newBrightMode);
-        });
+        // Create a binding to update button text when the theme changes
+        ThemeManager.getInstance().brightModeProperty().addListener(
+                (observable, oldValue, newValue) -> updateToggleButtonText(newValue));
+
+        toggleButton.setOnAction(event -> ThemeManager.getInstance().toggleTheme());
 
         this.getChildren().add(toggleButton);
     }
 
     private void updateToggleButtonText(boolean isBrightMode) {
         toggleButton.setText(isBrightMode ? "Dark Mode" : "Light Mode");
-    }
-
-    private void applyTheme(boolean isBrightMode) {
-        String styleResource = isBrightMode ? LIGHT_STYLE : DARK_STYLE;
-        this.getStylesheets().clear();
-        this.getStylesheets().add(Objects.requireNonNull(
-                getClass().getResource(styleResource)).toExternalForm());
     }
 }
