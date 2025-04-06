@@ -1,10 +1,14 @@
 package com.hci.javafx.session;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
 public class AppSession {
 
     private static AppSession instance;
 
-    private final String username = "johnexample";
+    private final String username = "john-example";
     private final String fName = "John";
     private final String lName = "Example";
     private boolean brightMode = true;
@@ -18,23 +22,4 @@ public class AppSession {
         return instance;
     }
 
-    public boolean isBrightMode() {
-        return brightMode;
-    }
-
-    public void setBrightMode(boolean brightMode) {
-        this.brightMode = brightMode;
-    }
-
-    public String getlName() {
-        return lName;
-    }
-
-    public String getfName() {
-        return fName;
-    }
-
-    public String getUsername() {
-        return username;
-    }
 }
