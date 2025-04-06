@@ -204,3 +204,133 @@
 .toggle-button:hover {
     -fx-text-fill: #f0f0f0;
 }
+
+/* Recipe Display Styles - Dark Theme */
+
+.recipe-display {
+    -fx-background-color: linear-gradient(to bottom, #2b1b3d 50%, #4a0080 100%);
+}
+
+/* Recipe Header */
+.recipe-header {
+    -fx-background-color: #3a2b55;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-padding: 15;
+}
+
+.recipe-image {
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 1);
+}
+
+.recipe-title {
+    -fx-font-family: Calibri;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #a64dff;
+}
+
+.recipe-prep-time, .recipe-difficulty {
+    -fx-font-family: Calibri;
+    -fx-font-size: 16px;
+    -fx-text-fill: #f0f0f0;
+}
+
+/* Details Section */
+.recipe-details-section {
+    -fx-background-color: #3a2b55;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-padding: 15;
+}
+
+.section-title {
+    -fx-font-family: Calibri;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #a64dff;
+}
+
+.recipe-description {
+    -fx-font-family: Calibri;
+    -fx-font-size: 16px;
+    -fx-text-fill: #f0f0f0;
+    -fx-wrap-text: true;
+}
+
+.nutrition-box {
+    -fx-padding: 10 0 0 0;
+}
+
+.nutrition-item {
+    -fx-font-family: Calibri;
+    -fx-font-size: 14px;
+    -fx-background-color: #2d2041;
+    -fx-background-radius: 15;
+    -fx-padding: 5 10;
+    -fx-text-fill: #b388ff;
+}
+
+/* Ingredients Section */
+.ingredients-section {
+    -fx-background-color: #3a2b55;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-padding: 15;
+}
+
+.ingredient-item {
+    -fx-font-family: Calibri;
+    -fx-font-size: 14px;
+    -fx-background-color: #2d2041;
+    -fx-background-radius: 15;
+    -fx-padding: 8 12;
+    -fx-text-fill: #f0f0f0;
+    -fx-border-color: #4e3d6b;
+    -fx-border-width: 1;
+    -fx-border-radius: 15;
+}
+
+/* Instructions Section */
+.instructions-section {
+    -fx-background-color: #3a2b55;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-padding: 15;
+}
+
+.step-number {
+    -fx-font-family: Calibri;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #a64dff;
+    -fx-min-width: 30;
+}
+
+.step-text {
+    -fx-font-family: Calibri;
+    -fx-font-size: 16px;
+    -fx-text-fill: #f0f0f0;
+    -fx-wrap-text: true;
+}
+
+.instructions-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+}
+
+.instructions-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.instructions-scroll > .scroll-bar:vertical {
+    -fx-background-color: #2d2041;
+    -fx-background-radius: 0 5 5 0;
+}
+
+.instructions-scroll > .scroll-bar:vertical > .thumb {
+    -fx-background-color: #8a2be2;
+    -fx-background-radius: 5;
+}

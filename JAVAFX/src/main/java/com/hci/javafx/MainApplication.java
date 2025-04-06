@@ -1,6 +1,8 @@
 package com.hci.javafx;
 
+import com.hci.javafx.recipe.Recipe;
 import com.hci.javafx.ui.MainPage;
+import com.hci.javafx.ui.RecipeDisplay;
 import com.hci.javafx.ui.SplashScreen;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -25,6 +27,13 @@ public class MainApplication extends Application {
         MainPage mp = new MainPage();
         mp.setPrefHeight(Screen.getPrimary().getVisualBounds().getHeight());
         Scene scene = new Scene(mp);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public void showRecipeDisplay(Recipe r){
+        RecipeDisplay rd = new RecipeDisplay(r);
+        Scene scene = new Scene(rd);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

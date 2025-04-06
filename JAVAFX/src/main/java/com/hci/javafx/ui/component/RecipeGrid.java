@@ -1,5 +1,6 @@
 package com.hci.javafx.ui.component;
 
+import com.hci.javafx.MainApplication;
 import com.hci.javafx.recipe.Recipe;
 import com.hci.javafx.theme.ThemeManager;
 import javafx.geometry.Insets;
@@ -54,5 +55,6 @@ public class RecipeGrid extends VBox {
         // This would open a recipe detail page
         System.out.println("Show details for recipe: " + recipe.getName());
         // Implementation of detailed view would go here
+        MainApplication.getInstance().showRecipeDisplay(recipe);
     }
 }
