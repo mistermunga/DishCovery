@@ -6,7 +6,7 @@
         "prep_time": "10",
         "difficulty": "easy",
         "ingredients": [
-          "eggs",
+          "Eggs",
           "Salt",
           "Pepper",
           "Butter"
@@ -26,7 +26,7 @@
         "prep_time": "25",
         "difficulty": "easy",
         "ingredients": [
-          "Pasta of choice",
+          "Pasta",
           "Bell peppers",
           "Zucchini",
           "Cherry tomatoes",
@@ -59,7 +59,7 @@
           "Olive oil",
           "Salt",
           "Pepper",
-          "Dressing of choice"
+          "Dressing"
         ],
         "steps": [
           "Season chicken breasts with salt, pepper, and a drizzle of olive oil.",
@@ -105,7 +105,7 @@
           "Eggs",
           "Butter",
           "Baking powder",
-          "Optional: Chocolate ganache for frosting"
+          "Chocolate ganache"
         ],
         "steps": [
           "Preheat the oven and prepare a cake pan by greasing it lightly.",
@@ -122,13 +122,13 @@
         "prep_time": "15",
         "difficulty": "easy",
         "ingredients": [
-          "Mixed vegetables (broccoli, carrots, bell peppers, snap peas)",
+          "Mixed vegetables",
           "Garlic",
           "Ginger",
           "Soy sauce",
           "Sesame oil",
           "Vegetable oil",
-          "Optional: tofu or tempeh"
+          "tofu"
         ],
         "steps": [
           "Heat vegetable oil in a wok or large pan over high heat.",
@@ -147,11 +147,11 @@
         "difficulty": "easy",
         "ingredients": [
           "Whole grain bread",
-          "Ripe avocado",
+          "Avocado",
           "Salt",
           "Red pepper flakes",
           "Lemon juice",
-          "Optional: poached egg"
+          "Eggs"
         ],
         "steps": [
           "Toast the bread until golden and crispy.",
@@ -196,15 +196,15 @@
         "prep_time": "25",
         "difficulty": "medium",
         "ingredients": [
-          "Shrimp (peeled and deveined)",
-          "Linguine or spaghetti",
+          "Shrimp",
+          "Pasta",
           "Garlic",
-          "Lemon (juice and zest)",
+          "Lemon",
           "Butter",
           "Olive oil",
-          "Red pepper flakes",
+          "Red pepper",
           "Parsley",
-          "Parmesan cheese",
+          "Parmesan",
           "Salt",
           "Pepper"
         ],
@@ -225,12 +225,12 @@
         "prep_time": "10",
         "difficulty": "easy",
         "ingredients": [
-          "small pasta",
+          "pasta",
           "Water",
           "Salt",
           "Milk",
           "Pre-shredded cheese (cheddar works great)",
-          "Butter (optional)"
+          "Butter"
         ],
         "steps": [
           "Place 1 cup of pasta and 1 cup of water in a large microwave-safe bowl.",
@@ -249,10 +249,10 @@
         "difficulty": "easy",
         "ingredients": [
           "Instant ramen package",
-          "Egg",
+          "Eggs",
           "Green onions",
-          "Frozen vegetables (peas, corn, carrots mix)",
-          "Hot sauce (optional)"
+          "Frozen vegetables",
+          "Hot sauce"
         ],
         "steps": [
           "Boil water according to ramen package instructions.",
@@ -274,8 +274,8 @@
           "Bread",
           "Peanut butter",
           "Banana",
-          "Honey (optional)",
-          "Cinnamon (optional)"
+          "Honey",
+          "Cinnamon"
         ],
         "steps": [
           "Toast the bread to your preferred level of crispiness.",

@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Getter
 public class RecipeService {
 
-    @Getter
     private List<Recipe> recipes;
     private static final String RECIPE_JSON_PATH = "/com/hci/javafx/recipes.json";
 
