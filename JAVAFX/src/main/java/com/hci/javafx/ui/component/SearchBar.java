@@ -1,5 +1,6 @@
 package com.hci.javafx.ui.component;
 
+import com.hci.javafx.theme.ThemeManager;
 import javafx.scene.control.TextField;
 
 import java.util.Objects;
@@ -7,9 +8,7 @@ import java.util.Objects;
 public class SearchBar extends TextField {
 
     public SearchBar() {
-        this.getStylesheets()
-                .add(Objects.requireNonNull(getClass()
-                        .getResource("/com/hci/javafx/styles.css")).toExternalForm());
+        ThemeManager.getInstance().registerComponent(this);
         this.getStyleClass().add("search-bar");
         this.setPromptText("Search");
     }

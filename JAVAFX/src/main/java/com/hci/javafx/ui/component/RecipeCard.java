@@ -1,6 +1,7 @@
 package com.hci.javafx.ui.component;
 
 import com.hci.javafx.recipe.Recipe;
+import com.hci.javafx.theme.ThemeManager;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -19,9 +20,8 @@ public class RecipeCard extends StackPane {
 
     public RecipeCard(Recipe recipe) {
         this.recipe = recipe;
-        this.getStylesheets()
-                .add(Objects.requireNonNull(getClass()
-                        .getResource("/com/hci/javafx/styles.css")).toExternalForm());
+
+        ThemeManager.getInstance().registerComponent(this);
 
         // Apply recipe-card style
         this.getStyleClass().add("recipe-card");

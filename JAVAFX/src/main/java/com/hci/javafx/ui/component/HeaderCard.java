@@ -1,5 +1,6 @@
 package com.hci.javafx.ui.component;
 
+import com.hci.javafx.theme.ThemeManager;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -14,9 +15,7 @@ import java.util.Objects;
 public class HeaderCard extends HBox {
 
     public HeaderCard() {
-        this.getStylesheets()
-                .add(Objects.requireNonNull(getClass()
-                        .getResource("/com/hci/javafx/styles.css")).toExternalForm());
+        ThemeManager.getInstance().registerComponent(this);
 
         this.setAlignment(Pos.CENTER_LEFT);
         this.setPadding(new Insets(10, 15, 10, 15));

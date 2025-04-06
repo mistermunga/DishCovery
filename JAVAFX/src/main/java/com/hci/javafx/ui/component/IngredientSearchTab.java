@@ -1,5 +1,6 @@
 package com.hci.javafx.ui.component;
 
+import com.hci.javafx.theme.ThemeManager;
 import javafx.geometry.Insets;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -14,9 +15,7 @@ public class IngredientSearchTab extends VBox {
     TextField searchField1, searchField2;
 
     public IngredientSearchTab() {
-        this.getStylesheets()
-                .add(Objects.requireNonNull(getClass()
-                        .getResource("/com/hci/javafx/styles.css")).toExternalForm());
+        ThemeManager.getInstance().registerComponent(this);
 
         Label title = new Label("Ingredients");
         title.getStyleClass().add("ingredients-text");

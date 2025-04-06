@@ -1,6 +1,7 @@
 package com.hci.javafx.ui.component;
 
 import com.hci.javafx.recipe.Recipe;
+import com.hci.javafx.theme.ThemeManager;
 import javafx.geometry.Insets;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
@@ -13,9 +14,8 @@ public class RecipeGrid extends VBox {
     private FlowPane flowPane;
 
     public RecipeGrid() {
-        this.getStylesheets()
-                .add(Objects.requireNonNull(getClass()
-                        .getResource("/com/hci/javafx/styles.css")).toExternalForm());
+
+        ThemeManager.getInstance().registerComponent(this);
 
         // Initialize the flow pane for recipe cards
         flowPane = new FlowPane();

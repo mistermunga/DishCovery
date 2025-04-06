@@ -1,5 +1,6 @@
 package com.hci.javafx.ui.component;
 
+import com.hci.javafx.theme.ThemeManager;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -12,9 +13,7 @@ import java.util.Objects;
 public class FilterComponent extends VBox {
 
     public FilterComponent() {
-        this.getStylesheets()
-                .add(Objects.requireNonNull(getClass()
-                        .getResource("/com/hci/javafx/styles.css")).toExternalForm());
+        ThemeManager.getInstance().registerComponent(this);
 
         this.setSpacing(10);
         this.setPadding(new Insets(15, 15, 5, 15));

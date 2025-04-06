@@ -2,6 +2,7 @@ package com.hci.javafx.ui.component;
 
 import java.awt.Desktop;
 
+import com.hci.javafx.theme.ThemeManager;
 import javafx.geometry.Pos;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.layout.HBox;
@@ -15,9 +16,7 @@ public class Footer extends HBox {
 
     public Footer() {
 
-        this.getStylesheets()
-                .add(Objects.requireNonNull(getClass()
-                        .getResource("/com/hci/javafx/styles.css")).toExternalForm());
+        ThemeManager.getInstance().registerComponent(this);
 
         Hyperlink aboutUs = new Hyperlink("About Us");
         aboutUs.getStyleClass().add("footer-link");
