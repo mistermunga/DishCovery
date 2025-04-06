@@ -187,3 +187,18 @@
 .footer-link:hover {
     -fx-underline: true;
 }
+
+
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #AAAAAA;
+    -fx-font-size: 12px;
+    -fx-font-family: Calibri;
+    -fx-underline: true;
+    -fx-cursor: hand;
+    -fx-padding: 5 0 0 0;
+}
+
+.toggle-button:hover {
+    -fx-text-fill: #DDDDDD;
+}

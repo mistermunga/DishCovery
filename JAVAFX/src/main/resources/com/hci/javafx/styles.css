@@ -187,3 +187,18 @@
 .footer-link:hover {
     -fx-underline: true;
 }
+
+/* Toggle button - Light & Dark Mode */
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888888;
+    -fx-font-size: 12px;
+    -fx-font-family: Calibri;
+    -fx-underline: true;
+    -fx-cursor: hand;
+    -fx-padding: 5 0 0 0;
+}
+
+.toggle-button:hover {
+    -fx-text-fill: #555555;
+}
