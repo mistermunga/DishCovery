@@ -9,6 +9,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
 
 import java.util.Objects;
 
@@ -54,21 +55,18 @@ public class RecipeCard extends StackPane {
 
     private ImageView createRecipeImageView() {
         ImageView recipeImageView = new ImageView();
+        recipeImageView.setFitWidth(150);
+        recipeImageView.setFitHeight(150);
+        recipeImageView.setPreserveRatio(true); // Add this to maintain aspect ratio
 
         try {
             // Try to load the image from the path in the recipe
             String imagePath = "/com/hci/javafx" + recipe.getImage_path();
+            System.out.println(imagePath);
 
             Image recipeImage = new Image(Objects.requireNonNull(
                     getClass().getResourceAsStream(imagePath)));
-
             recipeImageView.setImage(recipeImage);
-            recipeImageView.setFitWidth(150);
-            recipeImageView.setFitHeight(150);
-
-            // Clip the image to be rounded at corners
-            recipeImageView.setClip(new javafx.scene.shape.Rectangle(
-                    150, 150, 10, 10));
 
         } catch (Exception e) {
             System.err.println("Could not load recipe image: " + e.getMessage());
@@ -77,12 +75,16 @@ public class RecipeCard extends StackPane {
                 Image defaultImage = new Image(Objects.requireNonNull(
                         getClass().getResourceAsStream("/com/hci/javafx/image/recipes/default.jpg")));
                 recipeImageView.setImage(defaultImage);
-                recipeImageView.setFitWidth(150);
-                recipeImageView.setFitHeight(150);
             } catch (Exception ex) {
                 System.err.println("Could not load default image: " + ex.getMessage());
             }
         }
+
+        // Apply rounded corners with the correct approach
+        Rectangle clip = new Rectangle(150, 150);
+        clip.setArcWidth(20);  // Control the corner radius
+        clip.setArcHeight(20); // Control the corner radius
+        recipeImageView.setClip(clip);
 
         return recipeImageView;
     }

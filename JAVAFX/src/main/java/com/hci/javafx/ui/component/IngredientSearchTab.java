@@ -1,5 +1,6 @@
 package com.hci.javafx.ui.component;
 
+import javafx.geometry.Insets;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
@@ -30,6 +31,9 @@ public class IngredientSearchTab extends VBox {
         searchField2.getStyleClass().add("ingredient-placeholder");
         searchField2.setPromptText("e.g butter");
         this.getChildren().add(searchField2);
+
+        VBox.setMargin(searchField1, new Insets(10, 10, 10, 10));
+        VBox.setMargin(searchField2, new Insets(10, 10, 10, 10));
     }
 
     public List<String> getIngredients() {

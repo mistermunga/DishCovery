@@ -48,6 +48,9 @@ public class MainPage extends VBox {
 
         VBox.setVgrow(scrollPane, Priority.ALWAYS);
         this.getChildren().add(scrollPane);
+
+        Footer ft = new Footer();
+        this.getChildren().add(ft);
     }
 
     private void showHeader() {
@@ -81,7 +84,7 @@ public class MainPage extends VBox {
         buttonContainer.setPadding(new Insets(10, 0, 10, 0));
 
         Button findRecipesButton = new Button("Find Recipes!");
-        findRecipesButton.getStyleClass().add("light-mode-major-button");
+        findRecipesButton.getStyleClass().add("light-mode-rainbow-button");
         findRecipesButton.setOnAction(event -> performSearch());
 
         buttonContainer.getChildren().add(findRecipesButton);
