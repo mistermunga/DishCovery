@@ -3,6 +3,7 @@ module com.hci.javafx {
     requires javafx.fxml;
     requires static lombok;
     requires com.fasterxml.jackson.databind;
+    requires java.desktop;
 
 
     opens com.hci.javafx to javafx.fxml, com.fasterxml.jackson.databind;

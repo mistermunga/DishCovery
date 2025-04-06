@@ -4,6 +4,7 @@ import com.hci.javafx.ui.MainPage;
 import com.hci.javafx.ui.SplashScreen;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import lombok.Getter;
 
@@ -22,6 +23,7 @@ public class MainApplication extends Application {
 
     public void showMainPage(){
         MainPage mp = new MainPage();
+        mp.setPrefHeight(Screen.getPrimary().getVisualBounds().getHeight());
         Scene scene = new Scene(mp);
         primaryStage.setScene(scene);
         primaryStage.show();
