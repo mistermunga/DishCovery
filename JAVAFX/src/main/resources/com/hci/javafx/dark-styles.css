@@ -1,19 +1,19 @@
-/* Recipe App JavaFX CSS - DishCovery */
+/* Recipe App JavaFX CSS - DishCovery (Dark Mode) */
 
 /* Main Background Gradient */
 .gradient-background {
-    -fx-background-color: linear-gradient(to bottom, #f8dede 50%, #cb003d 100%);
+    -fx-background-color: linear-gradient(to bottom, #2c2c2c 50%, #55001d 100%);
 }
 
 /* Search Bar */
 .search-bar {
     -fx-font-family: Calibri;
     -fx-font-size: 16px;
-    -fx-background-color: #FFFFFF;
+    -fx-background-color: #333333;
     -fx-background-radius: 20;
     -fx-border-radius: 20;
     -fx-padding: 10 15;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0, 0, 1);
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.05), 3, 0, 0, 1);
 }
 
 .search-icon {
@@ -25,11 +25,11 @@
     -fx-font-family: Calibri;
     -fx-font-size: 18px;
     -fx-font-weight: bold;
-    -fx-text-fill: #000000;
+    -fx-text-fill: #FFFFFF;
 }
 
 .filter-icon {
-    -fx-fill: #cb003d;
+    -fx-fill: #ff4e7a;
 }
 
 /* Cook Time Section */
@@ -37,21 +37,21 @@
     -fx-font-family: Calibri;
     -fx-font-size: 18px;
     -fx-font-weight: bold;
-    -fx-text-fill: #000000;
+    -fx-text-fill: #FFFFFF;
 }
 
 .cook-time-icon {
-    -fx-fill: #cb003d;
+    -fx-fill: #ff4e7a;
 }
 
 .cook-time-input {
     -fx-font-family: Calibri;
     -fx-font-size: 14px;
-    -fx-background-color: #FFFFFF;
+    -fx-background-color: #444444;
     -fx-background-radius: 15;
     -fx-border-radius: 15;
     -fx-padding: 5 10;
-    -fx-text-fill: #000000;
+    -fx-text-fill: #FFFFFF;
 }
 
 /* Ingredients Section */
@@ -59,24 +59,24 @@
     -fx-font-family: Calibri;
     -fx-font-size: 18px;
     -fx-font-weight: bold;
-    -fx-text-fill: #cb003d;
+    -fx-text-fill: #FF6A8D;
 }
 
 .ingredient-input {
     -fx-font-family: Calibri;
     -fx-font-size: 14px;
-    -fx-background-color: #FFFFFF;
+    -fx-background-color: #333333;
     -fx-background-radius: 20;
     -fx-border-radius: 20;
     -fx-padding: 10 15;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0, 0, 1);
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.05), 3, 0, 0, 1);
 }
 
 .ingredient-placeholder {
     -fx-font-family: Calibri;
     -fx-font-size: 14px;
-    -fx-text-fill: #999999;
-    -fx-border-color: #cb300d;
+    -fx-text-fill: #BBBBBB;
+    -fx-border-color: #ff4e7a;
     -fx-border-width: 2;
     -fx-border-radius: 20;
 }
@@ -84,11 +84,11 @@
 .add-more-ingredients {
     -fx-font-family: Calibri;
     -fx-font-size: 14px;
-    -fx-text-fill: #666666;
+    -fx-text-fill: #AAAAAA;
 }
 
 .add-ingredient-icon {
-    -fx-fill: #666666;
+    -fx-fill: #AAAAAA;
 }
 
 /* Get Started Button */
@@ -101,7 +101,7 @@
     -fx-border-radius: 20;
     -fx-padding: 15 20;
     -fx-cursor: hand;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 5, 0, 0, 2);
 }
 
 /* Find Recipe Button - Rainbow Gradient Button */
@@ -110,76 +110,76 @@
     -fx-font-size: 18px;
     -fx-font-weight: bold;
     -fx-text-fill: #FFFFFF;
-    -fx-background-color: linear-gradient(to right, #cb003d, #FF914D);
+    -fx-background-color: linear-gradient(to right, #ff4e7a, #FF914D);
     -fx-background-radius: 20;
     -fx-border-radius: 20;
     -fx-padding: 12 25;
     -fx-cursor: hand;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0, 0, 2);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 6, 0, 0, 2);
 }
 
 .rainbow-button:hover {
-    -fx-background-color: linear-gradient(to right, #b8003a, #ff8438);
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);
+    -fx-background-color: linear-gradient(to right, #e7436c, #e87c3a);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 8, 0, 0, 3);
 }
 
 .rainbow-button:pressed {
-    -fx-background-color: linear-gradient(to right, #a50033, #e77631);
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+    -fx-background-color: linear-gradient(to right, #c4375e, #cb6a2e);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 3, 0, 0, 1);
 }
 
 /* Nav Buttons - Secondary Navigation Buttons */
 .minor-button {
     -fx-font-family: Calibri;
     -fx-font-size: 16px;
-    -fx-text-fill: #cb003d;
-    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-text-fill: #FF6A8D;
+    -fx-background-color: rgba(60, 60, 60, 0.8);
     -fx-background-radius: 15;
     -fx-border-radius: 15;
-    -fx-border-color: #cb003d;
+    -fx-border-color: #FF6A8D;
     -fx-border-width: 1;
     -fx-padding: 8 15;
     -fx-cursor: hand;
 }
 
 .minor-button:hover {
-    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-color: rgba(70, 70, 70, 0.95);
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0, 0, 1);
 }
 
 .minor-button:pressed {
-    -fx-background-color: rgba(203, 0, 61, 0.1);
+    -fx-background-color: rgba(255, 106, 141, 0.1);
 }
 
 /* Recipe Category Cards */
 .recipe-card {
-    -fx-background-color: #FFFFFF;
+    -fx-background-color: #2f2f2f;
     -fx-background-radius: 10;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 0, 2);
 }
 
 .recipe-card-title {
     -fx-font-family: Calibri;
     -fx-font-size: 16px;
     -fx-font-weight: bold;
-    -fx-text-fill: #000000;
+    -fx-text-fill: #FFFFFF;
 }
 
 .recipe-card-icon {
-    -fx-fill: #FFFFFF;
+    -fx-fill: #2f2f2f;
 }
 
 .non-visual-text {
     -fx-font-family: Calibri;
     -fx-font-size: 12px;
-    -fx-text-fill: #666666;
+    -fx-text-fill: #AAAAAA;
 }
 
 /* Footer Links */
 .footer-link {
     -fx-font-family: Calibri;
     -fx-font-size: 14px;
-    -fx-text-fill: #FFFFFF;
+    -fx-text-fill: #FF914D;
     -fx-underline: false;
     -fx-cursor: hand;
 }
