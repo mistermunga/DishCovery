@@ -2,6 +2,8 @@ package com.hci.javafx.ui;
 
 import com.hci.javafx.recipe.Recipe;
 import com.hci.javafx.theme.ThemeManager;
+import com.hci.javafx.ui.component.Footer;
+import com.hci.javafx.ui.component.HeaderCard;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -15,6 +17,7 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 
 import java.util.List;
+import java.util.Objects;
 
 public class RecipeDisplay extends VBox {
 
@@ -37,9 +40,18 @@ public class RecipeDisplay extends VBox {
         createIngredientsSection();
         createInstructionsSection();
         createBackButton();
+
+        // Footer
+        Footer ft = new Footer();
+        this.getChildren().add(ft);
     }
 
     private void createHeader() {
+        // app Header
+        HeaderCard hdc = new HeaderCard();
+        ThemeManager.getInstance().registerComponent(hdc);
+        this.getChildren().add(hdc);
+
         HBox headerBox = new HBox();
         headerBox.setAlignment(Pos.CENTER_LEFT);
         headerBox.setSpacing(15);
@@ -47,15 +59,16 @@ public class RecipeDisplay extends VBox {
 
         // Recipe image
         ImageView recipeImage = new ImageView();
-        // If recipe has an image, set it here
-        if (recipe.getImage_path() != null && !recipe.getImage_path().isEmpty()) {
-            try {
-                recipeImage.setImage(new Image("/com/hci/javafx" + recipe.getImage_path()));
-            } catch (Exception e) {
-                System.err.println(e.getMessage());
-            }
-        } else {
-            System.err.println("something went wrong");
+        // recipe has an image, set it here
+        try {
+            String imagePath = "/com/hci/javafx" + recipe.getImage_path();
+            System.out.println(imagePath);
+            Image image = new Image(Objects.requireNonNull(
+                    getClass().getResourceAsStream(imagePath)
+            ));
+            recipeImage.setImage(image);
+        } catch (Exception e) {
+            System.err.println(e);
         }
 
         recipeImage.setFitWidth(150);
@@ -164,13 +177,7 @@ public class RecipeDisplay extends VBox {
             stepsBox.getChildren().add(stepBox);
         }
 
-        // Make instructions scrollable if they are long
-        ScrollPane scrollPane = new ScrollPane(stepsBox);
-        scrollPane.setFitToWidth(true);
-        scrollPane.setMaxHeight(300);
-        scrollPane.getStyleClass().add("instructions-scroll");
-
-        instructionsBox.getChildren().addAll(instructionsTitle, scrollPane);
+        instructionsBox.getChildren().addAll(instructionsTitle, stepsBox);
         this.getChildren().add(instructionsBox);
     }
 
@@ -183,7 +190,6 @@ public class RecipeDisplay extends VBox {
         backButton.getStyleClass().add("minor-button");
         backButton.setOnAction(event -> {
             // Go back to the main page with recipe list
-            // Assuming there's a method in MainApplication to go back
             com.hci.javafx.MainApplication.getInstance().showMainPage();
         });
 

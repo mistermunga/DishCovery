@@ -64,7 +64,6 @@ public class RecipeCard extends StackPane {
         try {
             // Try to load the image from the path in the recipe
             String imagePath = "/com/hci/javafx" + recipe.getImage_path();
-            System.out.println(imagePath);
 
             Image recipeImage = new Image(Objects.requireNonNull(
                     getClass().getResourceAsStream(imagePath)));

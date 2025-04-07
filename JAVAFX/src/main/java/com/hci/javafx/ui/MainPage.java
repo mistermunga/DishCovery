@@ -12,7 +12,6 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class MainPage extends VBox {

@@ -44,7 +44,7 @@ public class CookTimeSelector extends VBox {
         timeInput = new TextField();
         timeInput.getStyleClass().add("cook-time-input");
         timeInput.setPrefWidth(100);
-        timeInput.setText("30");
+        timeInput.setPromptText("e.g 15");
 
         // Only allow numbers to be entered
         timeInput.textProperty().addListener((observable, oldValue, newValue) -> {
@@ -75,7 +75,7 @@ public class CookTimeSelector extends VBox {
         try {
             return Integer.parseInt(timeInput.getText());
         } catch (NumberFormatException e) {
-            return 30; // Default value
+            return 15; // Default value
         }
     }
 }
